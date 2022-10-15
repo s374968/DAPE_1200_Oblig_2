@@ -11,13 +11,20 @@ html, body{
 body::-webkit-scrollbar
 {
 	display: none;
-    
 }
 
-.container{
+/*Container for første siden*/
+.forsteSideContainer{
     color: white; 
     position: relative;
 }
+
+/*bakgrunnsbildet for første side*/
+.celestronTemplateBackground{
+    height: 100%; 
+    width: 100%;
+}
+
 
 .text_over_bilde{
     position: absolute;
@@ -26,6 +33,11 @@ body::-webkit-scrollbar
     font-size: 6vw;
     font-weight:400;
     line-height: 1em;
+}
+
+.text_over_bilde_oransj{
+    color: #f07400; 
+    font-weight: 700
 }
 
 .oransj_underbox{
@@ -39,16 +51,108 @@ body::-webkit-scrollbar
     color: black;
 }
 
+.oransj_underbox > h1{
+    font-size: 2vw;
+}
+
+.links{
+    color: white;
+}
+
+/*Container for andre siden*/
+.andreSideContainer{
+    background-color: #f3f3f3;
+}
+
+/*Setter opp grid*/
 .grid{
     display: grid;
     grid-template-columns: 1fr 5fr 0.2fr 2fr 2fr 1fr;
+    position: relative;
 }
 
-.starsIMG{
+.welcomestarsIMG{
+    height: 60vw; 
+    width: 70vw
+}
+
+.welcomeText{
+    position: absolute;
+    font-size: 13vw; 
+    margin-left: 3vw; 
+    /* margin-top: -16vw;  */
+    color: #f3f3f3;
+    bottom: -1.5vw;
+    font-weight: 700;
+}
+
+/*liten sidebar med tekst*/
+.guideToUniverse > h2{
+    font-size: 1.2vw; 
+    margin-top: 3vw;
+}
+
+.sizeof5{
+    font-size: 10vw; 
+    margin-top: 0.5vw;
+}
+
+.issueHighlights{
+    font-size: 3vw; 
+    margin-top: 3.3vw;
+}
+
+.issueHighlightsUnderline{
+    text-decoration: underline; 
+    text-decoration-color: #f07400;
+}
+
+.guideToUniverseGrid{
+    display: grid;
+    grid-template-columns: 1fr 5fr 0.2fr 2fr 2fr 1fr;
+    position: relative;
+    margin-top: -1.5vw; 
+    height: 5vw;
+}
+
+.guideToUniverseGrid > img{
     height: 5vw; 
     width: 5vw; 
     border-radius: 50%; 
     padding: 10px;
+    margin-top: -1vw;
+}
+
+.guideToUniverseGrid > p{
+    width: 14vw; 
+    font-size: 0.85vw;
+}
+
+/*Hovedinnholdet i artikkelen*/
+.mainContentArticleArticle{
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr 0.5fr 2fr;
+    position: relative; 
+    margin-left: 3vw;
+    margin-top: 2vw;
+}
+
+.mainContentArticleArticle > p{
+    width: 58vw; 
+    font-size: 2vw;
+}
+
+.writerOfArticle > img{
+    border-radius: 50%; 
+    height: 10vw; 
+    width: 10vw; 
+    margin-top: 2.5vw;
+}
+
+.writerOfArticle > p{
+    /* width: 11vw;  */
+    font-size: 0.8vw; 
+    text-align: center;
 }
 
 .subscribe{
@@ -58,4 +162,46 @@ body::-webkit-scrollbar
     margin-top: 2.5vw; 
     border-radius: 1vw; 
     color: white
+}
+
+.subscribe > h1{
+    text-align: center; 
+    font-size: 1.5vw;
+}
+
+.subscribe > p{
+    font-size: 1.1vw; 
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.oransjLink{
+    color: white; font-size: 1.2vw; color: #f07400;
+}
+
+.keepInTouchGrid{
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr 3fr 3fr 2fr;
+    position: relative;
+}
+
+.oransjMedia{
+    color: #f07400; 
+    font-size: 2vw; 
+    width: 20vw;
+}
+
+.keepInTouchGrid h1:nth-child(2){
+    color: #f07400;
+}
+
+.keepInTouchGrid > h1{
+    color: #081630; 
+    font-size: 2vw; 
+    text-align: center;
+}
+
+hr{
+    width: 75vw; color: black;
 }
